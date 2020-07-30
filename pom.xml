@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>plugin</artifactId>
+        <version>4.2</version>
+    </parent>
+
+    <groupId>de.aservo</groupId>
+    <artifactId>flexmark-formatter-jenkins-plugin</artifactId>
+    <version>0.1</version>
+    <packaging>hpi</packaging>
+
+    <developers>
+        <developer>
+            <name>Patrick Hobusch</name>
+            <email>phobusch@aservo.com</email>
+            <organization>ASERVO Software GmbH</organization>
+            <organizationUrl>https://www.aservo.com</organizationUrl>
+        </developer>
+    </developers>
+
+    <properties>
+        <java.level>8</java.level>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.vladsch.flexmark</groupId>
+            <artifactId>flexmark</artifactId>
+            <version>0.62.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.vladsch.flexmark</groupId>
+            <artifactId>flexmark-util</artifactId>
+            <version>0.62.2</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>repo.jenkins-ci.org</id>
+            <url>http://repo.jenkins-ci.org/public/</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>repo.jenkins-ci.org</id>
+            <url>http://repo.jenkins-ci.org/public/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>

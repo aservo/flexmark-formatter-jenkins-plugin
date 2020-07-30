@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+  This plugin adds a Markup Formatter than can process Markdown using Flexmark
+</div>
